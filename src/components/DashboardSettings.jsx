@@ -6,14 +6,16 @@ function DashboardSettings() {
       <h2 className="text-2xl font-semibold mb-6">Configuarcion</h2>
       <form onSubmit={(e) => e.preventDefault()} className="space-y-6">
         <div>
-          <label>Nombre de Usuario</label>
+          <label
+            htmlFor="username"
+            className="block text-sm font-medium text-slate-300">Nombre de Usuario</label>
           <input
             type="text"
             id="username"
             name="username"
             defaultValue="Jhon Doe"
-            className="mt-1 block w-full bg-slate-700 border-slate-600 rounded-md shadow-sm py-2
-          px-3 text-white focus:outline-none focus:ring-green-500 sm:text-sm "
+            className="mt-1 block w-full bg-slate-700 border border-slate-600 rounded-md shadow-sm py-2
+          px-3 text-white focus:outline-none focus:ring-green-500  focus:border-green-500 sm:text-sm "
           />
         </div>
         <div>
@@ -28,8 +30,8 @@ function DashboardSettings() {
             id="email"
             name="email"
             defaultValue="jhon.doe@example.com"
-            className="mt-1 block w-full bg-slate-700 border-slate-600 rounded-md shadow-sm py-2
-          px-3 text-white focus:outline-none focus:ring-green-500 sm:text-sm "
+            className="mt-1 block w-full bg-slate-700 border border-slate-600 rounded-md shadow-sm py-2
+          px-3 text-white focus:outline-none focus:ring-green-500  focus:border-green-500 sm:text-sm "
           />
         </div>
         <div className="flex items-center">
