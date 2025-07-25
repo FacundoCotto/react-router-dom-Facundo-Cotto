@@ -26,13 +26,23 @@ function NavBar() {
           </NavLink>
         </li>
         <li>
-          <NavLink
+          {/* <NavLink
             to="/profile"
             className={({ isActive }) =>
               isActive ? "text-yellow-400 font-bold" : "text-white"
             }
           >
             Perfil
+          </NavLink> */}
+        </li>
+        <li>
+          <NavLink
+            to="/dashboard"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-400 font-bold" : "text-white"
+            }
+          >
+            Dashboard
           </NavLink>
         </li>
       </ul>
